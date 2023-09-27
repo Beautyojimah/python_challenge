@@ -1,0 +1,13 @@
+Financial Analysis
+
+----------------------------
+
+Total month is 86
+
+Total  is $ 22564198
+
+Average change is $ -8311.11
+
+Greatest positive change is $ 1862002 which occured on Aug-16
+
+Greatest negative change is $ -1825558 which occured on Feb-14

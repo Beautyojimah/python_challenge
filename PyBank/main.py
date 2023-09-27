@@ -45,8 +45,8 @@ date_of_greatest_profit = date_column[index_of_positive_increase]
 date_of_negative_profit = date_column[index_of_negative_increase]
 date_length = len(date_column)
 average_change = round(change_sum / (date_length - 1), 2)
-print(f'total month is {len(date_column)}')
-print(f'total  is $ {sum(profit_column)}')
-print(f'average change is $ {average_change}')
-print(f'greatest positive change is $ {greatest_positive_change} which occured on {date_of_greatest_profit}')
-print(f'greatest negative change is $ {greatest_negative_change} which occured on {date_of_negative_profit}')
+print(f'Total month is {len(date_column)}')
+print(f'Total  is $ {sum(profit_column)}')
+print(f'Average change is $ {average_change}')
+print(f'Greatest positive change is $ {greatest_positive_change} which occured on {date_of_greatest_profit}')
+print(f'Greatest negative change is $ {greatest_negative_change} which occured on {date_of_negative_profit}')

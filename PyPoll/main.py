@@ -26,7 +26,7 @@ def convert_data(data):
 ballot_id,candidate = convert_data(data)
 candidate_name= list(set(candidate)) # get the candidates
 # print name of candidates
-print(candidate_name)
+print(f'The names of election candidates are: {candidate_name[0]}, {candidate_name[1]}, {candidate_name[2]}')
 
 # initialize the counts by each voter
 candidate_one_votes = 0
@@ -48,10 +48,10 @@ candidate_two_percentage = round((candidate_two_votes / total_votes_casted) * 10
 candidate_three_percentage = round((candidate_three_votes / total_votes_casted) * 100, 2)
 
 # print candidate score and percentage
-print(f'total votes casted  {total_votes_casted}')
-print(f'votes  by : {candidate_name[0]} is   ({candidate_one_votes}) represents  {candidate_one_percentage} % of total votes')
-print(f'votes  by : {candidate_name[1]} is  ({candidate_two_votes}) represents  {candidate_two_percentage} % of total votes')
-print(f'votes  by : {candidate_name[2]}  is  ({candidate_three_votes}) represents  {candidate_three_percentage} % of total votes')
+print(f'Total votes casted:  {total_votes_casted}')
+print(f'Votes  by : {candidate_name[0]} is   ({candidate_one_votes}) represents  {candidate_one_percentage} % of total votes')
+print(f'Votes  by : {candidate_name[1]} is  ({candidate_two_votes}) represents  {candidate_two_percentage} % of total votes')
+print(f'Votes  by : {candidate_name[2]}  is  ({candidate_three_votes}) represents  {candidate_three_percentage} % of total votes')
 # declear the winner of the election with majority vote 
 def declare_winner(candidate_one_votes,candidate_two_votes,candidate_three_votes):
     max_vote=max(candidate_one_votes,candidate_two_votes,candidate_three_votes)
